@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12E856C8296DC4D30020799E /* GTXTestContrastCheckTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E856C5296DC4D30020799E /* GTXTestContrastCheckTestView.m */; };
+		12E856C9296DC4D30020799E /* GTXTestCustomTraitElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E856C6296DC4D30020799E /* GTXTestCustomTraitElement.m */; };
 		387C9786A3C1D45B6E6B81A6 /* libPods-GTXiLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEE861A7DDE5FF9E25B6B26 /* libPods-GTXiLib.a */; };
 		610CA3FD204DFC76008BAAA1 /* GTXPluginXCTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 610CA3FB204DFC76008BAAA1 /* GTXPluginXCTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		610CA3FE204DFC76008BAAA1 /* GTXPluginXCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 610CA3FC204DFC76008BAAA1 /* GTXPluginXCTestCase.m */; };
@@ -269,6 +271,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12E856C4296DC4D30020799E /* GTXTestContrastCheckTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTXTestContrastCheckTestView.h; path = Tests/Common/TestApp/Sources/GTXTestContrastCheckTestView.h; sourceTree = SOURCE_ROOT; };
+		12E856C5296DC4D30020799E /* GTXTestContrastCheckTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTXTestContrastCheckTestView.m; path = Tests/Common/TestApp/Sources/GTXTestContrastCheckTestView.m; sourceTree = SOURCE_ROOT; };
+		12E856C6296DC4D30020799E /* GTXTestCustomTraitElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTXTestCustomTraitElement.m; path = Tests/Common/TestApp/Sources/GTXTestCustomTraitElement.m; sourceTree = SOURCE_ROOT; };
+		12E856C7296DC4D30020799E /* GTXTestCustomTraitElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTXTestCustomTraitElement.h; path = Tests/Common/TestApp/Sources/GTXTestCustomTraitElement.h; sourceTree = SOURCE_ROOT; };
 		2EEE861A7DDE5FF9E25B6B26 /* libPods-GTXiLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GTXiLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		610CA3FB204DFC76008BAAA1 /* GTXPluginXCTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTXPluginXCTestCase.h; path = Classes/GTXPluginXCTestCase.h; sourceTree = SOURCE_ROOT; };
 		610CA3FC204DFC76008BAAA1 /* GTXPluginXCTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTXPluginXCTestCase.m; path = Classes/GTXPluginXCTestCase.m; sourceTree = SOURCE_ROOT; };
@@ -649,6 +655,10 @@
 		616FDF1025BF4A6300CCCAD5 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				12E856C4296DC4D30020799E /* GTXTestContrastCheckTestView.h */,
+				12E856C5296DC4D30020799E /* GTXTestContrastCheckTestView.m */,
+				12E856C7296DC4D30020799E /* GTXTestCustomTraitElement.h */,
+				12E856C6296DC4D30020799E /* GTXTestCustomTraitElement.m */,
 				616FDF1A25BF4ADC00CCCAD5 /* GTXTestApp.m */,
 				616FDF1D25BF4ADC00CCCAD5 /* GTXTestAppDelegate.h */,
 				616FDF1925BF4ADC00CCCAD5 /* GTXTestAppDelegate.m */,
@@ -1341,6 +1351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				616FDF2525BF4ADD00CCCAD5 /* GTXTestStepperButton.m in Sources */,
+				12E856C8296DC4D30020799E /* GTXTestContrastCheckTestView.m in Sources */,
+				12E856C9296DC4D30020799E /* GTXTestCustomTraitElement.m in Sources */,
 				616FDF2225BF4ADD00CCCAD5 /* GTXTestApp.m in Sources */,
 				616FDF2325BF4ADD00CCCAD5 /* GTXTestViewController.m in Sources */,
 				616FDF2125BF4ADD00CCCAD5 /* GTXTestAppDelegate.m in Sources */,
