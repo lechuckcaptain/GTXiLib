@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/google/GTXiLib.git", :tag => "5.0.0" }
   s.subspec "GTXiLib" do |sp|
     sp.source_files = "{Classes,OOPClasses}/**/*.{h,m,swift,mm,cc}"
-    sp.public_header_files = "{Classes,OOPClasses}/**/*.h"
+    sp.public_header_files = "{Classes}/**/*.h"
     sp.private_header_files = [
       "Classes/GTXImageRGBAData+GTXOOPAdditions.h",
       "Classes/GTXToolKit+GTXOOPAdditions.h",
