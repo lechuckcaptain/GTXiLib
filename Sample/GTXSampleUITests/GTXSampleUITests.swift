@@ -28,7 +28,7 @@ final class GTXSampleUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        print(GTXiLib.version())
     }
 
     func testLaunchPerformance() throws {
