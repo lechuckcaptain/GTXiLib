@@ -4,14 +4,16 @@
 use_frameworks!
 
 target 'GTXSample' do
-  pod 'GTXiLib', :path => '../'
-
   target 'GTXSampleTests' do
     inherit! :search_paths
+
+    pod 'GTXiLib', :path => '../'
   end
 
   target 'GTXSampleUITests' do
     inherit! :search_paths
+
+    pod 'GTXiLib', :path => '../'
   end
 end
 

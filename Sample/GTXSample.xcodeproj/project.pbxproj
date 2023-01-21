@@ -18,7 +18,6 @@
 		C3A00C64296F1DCF00BBC1C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A00C62296F1DCF00BBC1C0 /* LaunchScreen.storyboard */; };
 		C3A00C6F296F1DCF00BBC1C0 /* GTXSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A00C6E296F1DCF00BBC1C0 /* GTXSampleTests.swift */; };
 		C3A00C79296F1DCF00BBC1C0 /* GTXSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A00C78296F1DCF00BBC1C0 /* GTXSampleUITests.swift */; };
-		C3A00C7B296F1DCF00BBC1C0 /* GTXSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A00C7A296F1DCF00BBC1C0 /* GTXSampleUITestsLaunchTests.swift */; };
 		C3A73D84296F228F0000DEC2 /* SomeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A73D83296F228F0000DEC2 /* SomeClass.m */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +59,6 @@
 		C3A00C6E296F1DCF00BBC1C0 /* GTXSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTXSampleTests.swift; sourceTree = "<group>"; };
 		C3A00C74296F1DCF00BBC1C0 /* GTXSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTXSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A00C78296F1DCF00BBC1C0 /* GTXSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTXSampleUITests.swift; sourceTree = "<group>"; };
-		C3A00C7A296F1DCF00BBC1C0 /* GTXSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTXSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C3A73D81296F228F0000DEC2 /* GTXSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTXSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		C3A73D82296F228F0000DEC2 /* SomeClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeClass.h; sourceTree = "<group>"; };
 		C3A73D83296F228F0000DEC2 /* SomeClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeClass.m; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				C3A00C78296F1DCF00BBC1C0 /* GTXSampleUITests.swift */,
-				C3A00C7A296F1DCF00BBC1C0 /* GTXSampleUITestsLaunchTests.swift */,
 			);
 			path = GTXSampleUITests;
 			sourceTree = "<group>";
@@ -185,7 +182,6 @@
 				C3A00C50296F1DCD00BBC1C0 /* Sources */,
 				C3A00C51296F1DCD00BBC1C0 /* Frameworks */,
 				C3A00C52296F1DCD00BBC1C0 /* Resources */,
-				BC12121442747471C7F6FF62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,6 +200,7 @@
 				C3A00C66296F1DCF00BBC1C0 /* Sources */,
 				C3A00C67296F1DCF00BBC1C0 /* Frameworks */,
 				C3A00C68296F1DCF00BBC1C0 /* Resources */,
+				5D3E840FCE4BA38F13307BC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +220,7 @@
 				C3A00C70296F1DCF00BBC1C0 /* Sources */,
 				C3A00C71296F1DCF00BBC1C0 /* Frameworks */,
 				C3A00C72296F1DCF00BBC1C0 /* Resources */,
+				968BB541F9FCFE217AB7CC1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -350,6 +348,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5D3E840FCE4BA38F13307BC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTXSampleTests/Pods-GTXSampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTXSampleTests/Pods-GTXSampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GTXSampleTests/Pods-GTXSampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7121E170C9F5EFC65F726ED5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,21 +387,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BC12121442747471C7F6FF62 /* [CP] Embed Pods Frameworks */ = {
+		968BB541F9FCFE217AB7CC1E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GTXSample/Pods-GTXSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GTXSampleUITests/Pods-GTXSampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GTXSample/Pods-GTXSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GTXSampleUITests/Pods-GTXSampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GTXSample/Pods-GTXSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GTXSampleUITests/Pods-GTXSampleUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -415,7 +430,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3A00C7B296F1DCF00BBC1C0 /* GTXSampleUITestsLaunchTests.swift in Sources */,
 				C3A00C79296F1DCF00BBC1C0 /* GTXSampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
