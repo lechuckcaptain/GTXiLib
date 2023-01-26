@@ -56,7 +56,7 @@
   CGRect rect = CGRectStandardize(element.bounds);
   rect.origin = CGPointZero;
   UIGraphicsBeginImageContext(rect.size);
-  [element drawViewHierarchyInRect:rect afterScreenUpdates:NO];
+  [element drawViewHierarchyInRect:rect afterScreenUpdates:YES];
   UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
   UIGraphicsEndImageContext();
   return image;
