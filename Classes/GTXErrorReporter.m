@@ -52,6 +52,35 @@
   return image;
 }
 
++ (UIImage *)screenshotView:(UIView *)view failingElements:(NSArray *)elements {
+    // Render a gray scale screen shot of the view. Gray scale allows the element outlines to
+    //  be seen clearly.
+    UIImage *image = [GTXErrorReporter screenshotView:view];
+    UIImage *grayScaleScreenShot = [self gtx_grayScaleImageFromImage:image];
+
+    // Outline the locations of elements on the gray scale screenshot.
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, [UIScreen mainScreen].scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [grayScaleScreenShot drawInRect:view.bounds];
+
+    for (id element in elements) {
+        // Find the element's outline rect that needs to be marked on the screenshot.
+        CGRect elementOutline = [element accessibilityFrame];
+        if ([element isKindOfClass:[UIView class]]) {
+            UIView *elementAsView = element;
+            elementOutline = [elementAsView convertRect:elementAsView.bounds toView:view];
+        }
+        // Draw a rectangle indicating the outline.
+        CGContextSetLineWidth(context, 3.0);
+        CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
+        CGContextStrokeRect(context, elementOutline);
+    }
+    // Save the currently rendered image.
+    image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 + (UIImage *)screenshotView:(UIView *)element {
   CGRect rect = CGRectStandardize(element.bounds);
   rect.origin = CGPointZero;

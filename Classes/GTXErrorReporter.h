@@ -31,6 +31,15 @@
 + (UIImage *)screenshotWithFailingElements:(NSArray *)elements;
 
 /**
+ *  Takes a screenshot of a @c view and outlines all the provided (failing) @c elements.
+ *
+ *  @param elements Array of elements with accessibility issues.
+ *
+ *  @return an image of the view with failing elements marked.
+ */
++ (UIImage *)screenshotView:(UIView *)view failingElements:(NSArray *)elements;
+
+/**
  *  Takes a screenshot of the given @c element.
  *
  *  @param element element whose screenshot is needed.
